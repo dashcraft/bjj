@@ -1,0 +1,21 @@
+{
+  "name": "bjj",
+  "description": "Dashcraft Project for American Top Team",
+  "main": "app.js",
+  "authors": [
+    "Rawle Juglal <rawledjuglal@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/RawleJuglal/bjj",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "^2.0.4"
+  }
+}
