@@ -43,4 +43,16 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+//Server Shutdown Code handling
+process.on('SIGTERM', () => {
+    console.log('Received SIGTERM, shutting down');
+    process.nextTick(() => process.exit());  	
+});
+
+process.on('exit', (code) => {
+    console.error('Process is about to exit with code ',code);
+});
+
+
 module.exports = app;
