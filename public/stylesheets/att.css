@@ -2,54 +2,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.box{
-    width:100%;
-    height:100px;
-}
-
-.red{
-    background-color:red;
-}
-
-.orange{
-    background-color:orange;
-}
-.yellow{
-    background-color:yellow;
-}
-.green{
-    background-color:green;
-}
-.blue{
-    background-color:blue;
-}
-.silver{
-    background-color:silver;
-}
-.purple{
-    background-color:purple;
-}
-.black{
-    background-color:black;
-}
-.white{
-    background-color:white;
-}
-.pink{
-    background-color:pink;
-}
-.brown{
-    background-color:brown;
-}
-
-.gold{
-    background-color:gold;
-}
-.no-pad{
-    margin:0px;
-    padding:0px;
-}
-
 .center-content{
     text-align: center;
 }
@@ -63,39 +15,36 @@ body{
     list-style: none;
 }
 
-.logo{
-    margin:27px 0px 20.5px 0px;
-}
-
-.social-nav-buttons{
-    margin:45px 0px 38.5px 0px;
-}
-
-.social-nav-buttons li{
-    margin-right:20px;
-}
-
 .mini{
     height:24px;
     width:24px;
 }
 
-.navigation ul{
-    margin:44px 0px 37.5px 0px;
+.navigation ul, .social-nav-buttons ul, .social-buttons ul { 
+    list-style: none outside none; 
+    margin:0; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.social-nav-buttons ul li { 
+    margin-right:20px; 
+    display: inline; 
 }
 
 .navigation ul li{
+    display:inline;
     margin-right:40px;
     font-size: 20px;
 }
 
 .navigation ul li a{
-    text-decoration: none;
+    text-decoration:none;
     color:#95989a;
 }
 
 .jumbotron{
-    height:778px;
+    height:85vh;
     background: url('../images/jumbotron_placeholder.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -104,8 +53,9 @@ body{
 }
 
 form{
-    margin: 68.5px 84.7px 0px 0px;
-    width:380.3px;
+    margin:0 auto;
+    margin-top: 68.5px;
+    width:300px;
     height:402.5px;
     background-color:rgba(0,0,0,.8);
 }
@@ -117,48 +67,116 @@ form{
 }
 
 .highlighted{
-    color:
-#3e9bc9;
+    color:#3e9bc9;
 }
 
-.form-input{
-    border-radius:0px !important;
-    color:white !important;
-    background-color: #333333 !important;
-    border:1px solid #ffffff !important;
+input[type]{
+    width:95%;
+    color:#ffffff;
+    border-radius:.5px;
+    border:1px solid #ffffff;
+    background-color:#333333;
 }
 
-input[type="submit"]{
-    border-radius:0px;
+input[type='submit']{
+    background-color: #117bcb;
+    border-radius:1px;
 }
 
-.intro .container{
-    border-bottom:1px solid gray;
+.intro-container{
+    border-bottom:1px solid gray;    
 }
 
-.social-buttons{
-    display:block;
+.intro-heading h3{
+    margin-top: 38px;
+    font-weight: bold;
+    font-size: 48px;
 }
 
-.spacing-twenty{
-    margin:0 20px;
+.intro-content p{
+    font-size: 16px;
 }
 
-
-
-.social-buttons ul{
-    list-style-type: none;
+.intro-button{
     text-align: center;
-    margin:0 auto;
-    display:table;
-    overflow: hidden;
+    border-bottom:1px solid #95989a;
 }
 
-.social-buttons ul li{
- float:left;
- padding:2px;
- width:24px;
- padding:24px;
- margin-left:auto;
- margin-right:auto;
+.intro-button a{
+    border-radius:4px;
+    margin-bottom: 38px;
+    background-image: linear-gradient(to bottom, #5d9cec, #4a89dc);
+}
+
+.social-heading h3{
+    margin-top: 36px;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.social-buttons ul li {
+    margin:0px 10px;
+    display: inline; 
+}
+
+.social-buttons ul li img{
+    height:61.5px;
+    width:61.5px;
+}
+
+.social-works-heading{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 52.5px;
+}
+
+.social-frames ul{
+    text-align: center;
+}
+
+.footer{
+    width:100vw;
+    height:113px;
+    background-color: rgba(0,0,0,.83);
+}
+
+@media (min-width: 750px) {
+    .social-frames ul li{
+        display:inline;
+    }
+}
+
+@media (min-width: 1000px) {
+    .logo{
+        margin:27px 0px 20.5px 0px;
+    }
+    
+   .social-nav-buttons{
+        margin:45px 0px 38.5px 0px;
+    } 
+    
+    .navigation ul{
+        margin:44px 0px 37.5px 0px;
+    }
+    
+    form{
+        float:right;
+        margin: 68.5px 84.7px 0px 0px;
+        width:380.3px;
+        height:402.5px;
+    }
+    
+    .social-frames ul li{
+        margin:0px 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .social-frames ul li{
+        margin:0px;
+    }
+    
+    .push-frames{
+        margin:0px 123px;
+    }
 }
