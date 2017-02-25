@@ -1,0 +1,94 @@
+.nav-holder{
+    height:107.5px;
+    background-color:black;
+}
+
+/*--------- ABOVE WILL BE REPLACED WITH base.css-----------*/
+.spotlight-headings{
+    text-align:center;
+    font-weight: bold;
+}
+
+.spotlight-instructor h2{
+    margin-top: 21.5px;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 9px;
+    border-bottom:1px solid #95989a;
+}
+
+.spotlight-photo{
+    display:block;
+    margin:0 auto;
+    width:274px;
+    height:249px;
+}
+
+.spotlight-instructor h3{
+    font-size: 40px;
+    margin-top:12.5px;
+    margin-bottom: 0px;
+}
+
+.spotlight-instructor h4{
+    margin: 16px 0px 30.5px 0px;
+    font-size:28px;
+}
+
+.spotlight-instructor p{
+    margin:0px 4px;
+    font-size: 16px;
+}
+
+.form-heading{
+    margin:0px;
+    padding:0px;
+    font-size: 22px;
+}
+
+.form-heading-top{
+    margin-top: 14.6px;
+}
+
+#nameInput{
+    margin-top: 47.6px;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .spotlight-instructor h3{
+        font-size: 48px;
+    }  
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .spotlight-instructor p{
+        margin:0px;
+        font-size: 16px;
+    }
+    
+    .form-heading{
+        font-size: 18px;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    form{
+        float:none;
+        margin:94px 0px 0px 0px;
+        width:380.3px;
+        height:402px;
+    }
+    
+    .form-heading{
+        font-size: 22px;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

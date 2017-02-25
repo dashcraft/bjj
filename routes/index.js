@@ -7,7 +7,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/main', function(req, res, next){
-    res.render('main', {title: 'American Top Team'});
+    res.render('main', {title: 'American Top Team OKC'});
 });
 
+router.get('/instructors', function(req, res, next ){
+  res.render('instructors', { title: 'ATTOKC - Instructors'});
+});
 module.exports = router;
