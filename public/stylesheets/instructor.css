@@ -4,40 +4,43 @@
 }
 
 /*--------- ABOVE WILL BE REPLACED WITH base.css-----------*/
-.spotlight-headings{
-    text-align:center;
-    font-weight: bold;
+form{
+    margin:0 auto;
 }
 
-.spotlight-instructor h2{
+.page-title-container h2{
     margin-top: 21.5px;
-    font-size: 48px;
     font-weight: bold;
     padding-bottom: 9px;
     border-bottom:1px solid #95989a;
 }
 
+.spotlight{
+    margin-bottom:94px;
+}
+
+.spotlight-headings{
+    text-align:center;
+    font-weight: bold;
+}
+
 .spotlight-photo{
-    display:block;
-    margin:0 auto;
+    margin-top: 42.5px;
     width:274px;
     height:249px;
 }
 
 .spotlight-instructor h3{
-    font-size: 40px;
     margin-top:12.5px;
     margin-bottom: 0px;
 }
 
 .spotlight-instructor h4{
     margin: 16px 0px 30.5px 0px;
-    font-size:28px;
 }
 
-.spotlight-instructor p{
+.spotlight-instructor p, .staff-bio p{
     margin:0px 4px;
-    font-size: 16px;
 }
 
 .form-heading{
@@ -54,6 +57,24 @@
     margin-top: 47.6px;
 }
 
+.staff-bio{
+    padding-bottom: 76px;
+}
+
+.staff-bio img{
+    margin-bottom: 19.5px;
+    width:224px;
+    height:199px;
+}
+
+.staff-name{
+    margin-bottom: 6px;
+}
+
+.staff-job{
+    margin-bottom:22.5px;
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {
   .spotlight-instructor h3{
@@ -62,17 +83,40 @@
 }
 
 /* Larger than phablet */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    .form-heading{
+        font-size: 18px;
+    }
+    
+    form{
+        float:none;
+        width:208px;
+        height:402px;
+    }
+    
+    input[type="submit"]{
+        padding: 0px 12px;
+    }
+    
+    .staff-bio img{
+        width:124px;
+        height:110px;
+    }
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-    .spotlight-instructor p{
+    .spotlight-instructor p, .staff-bio p{
         margin:0px;
-        font-size: 16px;
     }
     
     .form-heading{
         font-size: 18px;
+    }
+    
+    .staff-bio img{
+        width:176px;
+        height:156px;
     }
 }
 
@@ -80,13 +124,21 @@
 @media (min-width: 1000px) {
     form{
         float:none;
-        margin:94px 0px 0px 0px;
         width:380.3px;
         height:402px;
     }
     
     .form-heading{
         font-size: 22px;
+    }
+    
+    .staff-bio img{
+        width:224px;
+        height:199px;
+    }
+    
+     input[type="submit"]{
+        padding: 0px 30px;
     }
 }
 
