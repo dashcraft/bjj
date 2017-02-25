@@ -54,13 +54,63 @@
           </div><!--End of row-->
         </div><!--End of six columns-->
         <div class='six columns navigation'>
-          <ul class='no-list'>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>About Us</a></li>
-            <li><a href='#'>Programs</a></li>
+          <ul id="menu">
+            <li>
+              <div><a href='#'>Home</a></div>
+            </li>
+            <li>
+              <div>About Us</div>
+              <ul>
+                <li>
+                  <div><a href='#'>Instructor</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>History</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>Media</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>Programs</div>
+              <ul>
+                <li>
+                  <div><a href='#'>BJJ</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>Kick Boxing</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>No Gi</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>Wrestling</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>Kids BJJ</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>Item 4</div>
+            </li>
+            <li>
+              <div>Item 5</div>
+            </li>
+          </ul>
+          <!--<ul id='menu' class='no-list'>
+            <li><div><a href='#'>Home</a></div></li>
+            <li><div><a href='#'>About Us</a></div></li>
+            <li><div><a href='#'>Programs</a>
+                  <ul>
+                    <li><div>BJJ</div></li>
+                  </ul>
+                </div>
+            </li>
             <li><a href='#'>Schedule</a></li>
             <li><a href='#'>Contact Us</a></li>
-          </ul>
+          </ul>-->
         </div><!--End of navigation-->
       </div><!--End of row-->
       <div class='row'>
@@ -143,5 +193,8 @@
     </div><!--End of u-max-full-width-container-->
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+$( "#menu" ).menu();
+</script>
 </body>
 </html>

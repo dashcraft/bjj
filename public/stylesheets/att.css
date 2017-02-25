@@ -2,6 +2,18 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+#menu li div{
+    display:inline;
+}
+
+.ui-menu {
+    width: 100%;
+  }
+  
+li.ui-menu-item{
+    display:block;
+}
+  
 .center-content{
     text-align: center;
 }
@@ -21,9 +33,6 @@ body{
 }
 
 .navigation ul, .social-nav-buttons ul, .social-buttons ul { 
-    list-style: none outside none; 
-    margin:0; 
-    padding: 0; 
     text-align: center; 
 }
 
@@ -36,6 +45,7 @@ body{
     display:inline;
     margin-right:40px;
     font-size: 20px;
+    color:#95989a;
 }
 
 .navigation ul li a{
