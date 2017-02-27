@@ -15,15 +15,15 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="bower_components/skeleton/css/normalize.css">
   <link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
   <!-- Custom -->
-  <link rel='stylesheet' href='stylesheets/att.css'></link>
-
+  <link rel='stylesheet' href='stylesheets/base.css'></link>
+  <link rel='stylesheet' href='stylesheets/main.css'></link>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -36,97 +36,165 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class='container'>
-    <div class='row nav'>
-      <div class='five columns'>
-        <div class='logo u-pull-left'>
-          <img class='u-max-full-width u-pull-left' src='images/favicon.png'></img>
-          <h2 class='nav-title no-pad'>American Top Team</h2>
-          <address>5750 N. State Road 7, Coconut Creek, Florida 33073</address>
-        </div>
-        <div class='social-buttons u-pull-left'>
-          <ul>
-            <li class='u-pull-left social-nav-buttons'><a href='#'><img src='images/favicon.png'></img></a></li>
-            <li class='u-pull-left social-nav-buttons'><a href='#'><img src='images/favicon.png'></img></a></li>
-            <li class='u-pull-left social-nav-buttons'><a href='#'><img src='images/favicon.png'></img></a></li>
+  
+    <div class='u-max-full-width'>
+      <div class='row'>
+        <div class='six columns'>
+          <div class='row'>
+            <div class='six columns logo'>
+              <img src='images/logo_placeholder.jpg'></img>
+            </div><!--End of logo-->
+            <div class='six columns social-nav-buttons'>
+              <ul class='no-list'>
+                <li><a href='#'><img class='mini' src='images/favicon.png'></img></a></li>
+                <li><a href='#'><img class='mini' src='images/favicon.png'></img></a></li>
+                <li><a href='#'><img class='mini' src='images/favicon.png'></img></a></li>
+              </ul>
+            </div><!--social-nav-buttons-->
+          </div><!--End of row-->
+        </div><!--End of six columns-->
+        <div class='six columns navigation'>
+          <ul id="menu">
+            <li>
+              <div><a href='#'>Home</a></div>
+            </li>
+            <li>
+              <div>About Us</div>
+              <ul>
+                <li>
+                  <div><a href='#'>Instructor</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>History</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>Media</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>Programs</div>
+              <ul>
+                <li>
+                  <div><a href='#'>BJJ</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>Kick Boxing</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>No Gi</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>Wrestling</a></div>
+                </li>
+                <li>
+                  <div><a href='#'>Kids BJJ</a></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>Item 4</div>
+            </li>
+            <li>
+              <div>Item 5</div>
+            </li>
           </ul>
-        </div><!--End of social-buttons-->
-      </div>
-      <div class='seven columns'>
-        <div class='navigation u-pull-left'>
-          <ul>
-            <li class='u-pull-left spacing-twelve'><a href='#'>Home</a></li>
-            <li class='u-pull-left spacing-twelve'><a href='#'>About Us</a></li>
-            <li class='u-pull-left spacing-twelve'><a href='#'>Programs</a></li>
-            <li class='u-pull-left spacing-twelve'><a href='#'>Schedule</a></li>
-            <li class='u-pull-left spacing-twelve'><a href='#'>Contact Us</a></li>
-          </ul>
+          <!--<ul id='menu' class='no-list'>
+            <li><div><a href='#'>Home</a></div></li>
+            <li><div><a href='#'>About Us</a></div></li>
+            <li><div><a href='#'>Programs</a>
+                  <ul>
+                    <li><div>BJJ</div></li>
+                  </ul>
+                </div>
+            </li>
+            <li><a href='#'>Schedule</a></li>
+            <li><a href='#'>Contact Us</a></li>
+          </ul>-->
         </div><!--End of navigation-->
+      </div><!--End of row-->
+      <div class='row'>
+        <div class='twelve columns jumbotron'>
+          <form>
+            <div class='row'>
+              <div class='offset-by-two eight columns'>
+                <h2 class='form-heading center-content'>Contact Us To <span class='highlighted'>Start</span> Today</h2>
+              </div><!--twelve columns-->
+              <div class='offset-by-one ten columns center-content'>
+                <input type="text" placeholder="First & Last Name" id="nameInput">
+              </div>
+              <div class='offset-by-one ten columns center-content'>
+                <input type="email" placeholder="Email" id="emailInput">
+              </div>
+              <div class='offset-by-one ten columns center-content'>
+                <input type="tel" placeholder="Phone Number" id="phoneInput">
+              </div>
+              <div class='offset-by-one ten columns center-content'>
+                <input class='button' type="submit" value="START TRAINING TODAY">
+              </div>
+            </div><!--End of row-->
+          </form>
+        </div><!--End of jumbotron-->
+      </div><!--End of row-->
+      <div class='container'>
+        <div class='row intro'>
+          <div class='twelve columns intro-heading'>
+              <h3 class='center-content'>American Top Team OKC</h3>
+            </div><!--End of intro-heading-->
+          <div class='twelve columns intro-content'>
+              <p class='center-content'>American Top Team in Oklahoma City is the Premier MMA training facility used by mixed martial arts, brazilian jiujitsu competitors and other sports athletes alike! Come Join Us Today and see what all the fuss is about</p>
+            </div><!--End of intro-content-->
+          <div class='twelve columns intro-button'>
+              <a class="button" href="#">Join Now</a>
+            </div><!--End of intro-button-->
+        </div><!--End of intro-->
+        <div class='row social'>
+          <div class='twelve columns social-heading'>
+            <h3 class='center-content'>Check Us Out On Social Media!</h3>
+          </div><!--End of social-heading-->
+          <div class='twelve columns social-buttons'>
+            <ul class='no-list'>
+              <li><a href='#'><img src='images/favicon.png'></img></a></li>
+              <li><a href='#'><img src='images/favicon.png'></img></a></li>
+              <li><a href='#'><img src='images/favicon.png'></img></a></li>
+            </ul>
+          </div><!--End of social-buttons-->
+          <div class='twelve columns social-works'>
+            <div class='row'>
+              <div class='twelve columns recent-works'>
+                <h4 class='center-content social-works-heading'>Recent Works</h4>
+              </div><!--End of recent-works-->
+              <div class='twelve columns social-frames'>
+                <ul class='no-list'>
+                  <li><img src='images/frame_placeholder.jpg'></img></li>
+                  <li><img class='push-frames' src='images/frame_placeholder.jpg'></img></li>
+                  <li><img src='images/frame_placeholder.jpg'></img></li>
+                </ul>
+                <ul class='no-list'>
+                  <li><img src='images/frame_placeholder.jpg'></img></li>
+                  <li><img class='push-frames' src='images/frame_placeholder.jpg'></img></li>
+                  <li><img src='images/frame_placeholder.jpg'></img></li>
+                </ul>
+                <ul class='no-list'>
+                  <li><img src='images/frame_placeholder.jpg'></img></li>
+                  <li><img class='push-frames' src='images/frame_placeholder.jpg'></img></li>
+                  <li><img src='images/frame_placeholder.jpg'></img></li>
+                </ul>
+              </div>
+            </div><!--End of row-->
+          </div><!--End of social-works-->
+        </div><!--End of social-->
+      </div><!--End of container-->
+      <div class='row'>
+        <div class='twelve columns footer'>
+          
+        </div>
       </div>
-      
-    </div><!--End of nav-->
-    <div class='row jumbotron'>
-      <div class='four columns u-pull-right'>
-        <form>
-          <div class='row'>
-            <div class='twelve columns'>
-              <h2 class='form-heading center-content'>Contact Us To <span class='highlighted'>Start</span> Today</h2>
-            </div><!--End of three columns-->
-          </div><!--End of row-->
-          <div class='row'>
-            <div class='twelve columns'>
-              <input class="u-full-width" type="text" placeholder="First & Last Name" id="nameInput">
-            </div><!--End of three columns-->
-          </div><!--End of row-->
-          <div class='row'>
-            <div class='twelve columns'>
-              <input class="u-full-width" type="email" placeholder="Email" id="emailInput">
-            </div><!--End of three columns-->
-          </div><!--End of row-->
-          <div class='row'>
-            <div class='twelve columns'>
-              <input class="u-full-width" type="text" placeholder="Phone Number" id="phoneNumberInput">
-            </div><!--End of three columns-->
-          </div><!--End of row-->
-          <div class='row'>
-            <div class='twelve columns'>
-              <input class='u-full-width button button-primary' type="submit" value="submit">
-            </div><!--End of three columns-->
-          </div><!--End of row-->
-        </form>
-      </div>
-      
-    </div><!--End of jumbotron-->
-    <div class='row intro'>
-      <div class='intro-heading'>
-        <h3 class='center-content'>American Top Team</h3>
-      </div>
-      <div class='intro-content center-content'>
-        <p>American Top Team in Oklahoma City is the Premier MMA training facility used by mixed martial arts, brazilian jiujitsu competitors and other sports athletes alike! Come Join Us Today and see what all the fuss is about!</p>
-      </div>
-      <div class='intro-button'>
-        <a class="button button-primary" href="#">Join Now</a>
-      </div>
-    </div><!--End of intro-->
-    <div class='row social'>
-      <div class='social-heading'>
-        <h3 class='center-content'>Check Us Out on Social Media!</h3>
-      </div><!--End of social-heading-->
-      <div class='social-buttons offset-by-four four columns'>
-        <ul>
-          <li><a href='#'><img src='images/favicon.png'></img></a></li>
-          <li><a href='#'><img src='images/favicon.png'></img></a></li>
-          <li><a href='#'><img src='images/favicon.png'></img></a></li>
-        </ul>  
-      </div><!--End of social-buttons-->
-      <div class='u-cf'></div>
-      <div class='social-works'>
-        <h4 class='center-content'>Recent Activity</h4>
-      </div><!--End of social-works-->
-    </div><!--End of social-->
-  </div><!--End of container-->
-
+    </div><!--End of u-max-full-width-container-->
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+$( "#menu" ).menu();
+</script>
 </body>
 </html>
